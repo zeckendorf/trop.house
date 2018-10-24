@@ -70,6 +70,7 @@ function shuffle(device_id) {
     type: "PUT",
    beforeSend: function(xhr){xhr.setRequestHeader('Authorization', 'Bearer ' + _token );},
    complete: function(data) {
+       console.log('shuffle result')
        console.log(data);
        play(device_id);
    }
@@ -85,7 +86,8 @@ function play(device_id) {
    type: "PUT",
    data: '{"context_uri": "spotify:user:szeck:playlist:6WGQxH3t845oiMNfwkUWux"}',
    beforeSend: function(xhr){xhr.setRequestHeader('Authorization', 'Bearer ' + _token );},
-   success: function(data) { 
+   success: function(data) {
+     console.log('play result')
      console.log(data)
    }
   });
