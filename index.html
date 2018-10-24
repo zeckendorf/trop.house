@@ -159,7 +159,7 @@
       hillOffset = Util.increase(hillOffset, hillSpeed * playerSegment.curve * (position-startPosition)/segmentLength, 1);
       treeOffset = Util.increase(treeOffset, treeSpeed * playerSegment.curve * (position-startPosition)/segmentLength, 1);
 
-      if (position > playerZ) {
+      /*if (position > playerZ) {
         if (currentLapTime && (startPosition < playerZ)) {
           lastLapTime    = currentLapTime;
           currentLapTime = 0;
@@ -177,7 +177,7 @@
         else {
           currentLapTime += dt;
         }
-      }
+      }*/
 
     }
 
