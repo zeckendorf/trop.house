@@ -66,7 +66,7 @@ window.onSpotifyPlayerAPIReady = () => {
 function shuffle(device_id) {
    // set to shuffle
    $.ajax({
-    url: "https://api.spotify.com/v1/me/player/shuffle?state=true",
+    url: "https://api.spotify.com/v1/me/player/shuffle?state=true&device_id=" + device_id,
     type: "PUT",
    beforeSend: function(xhr){xhr.setRequestHeader('Authorization', 'Bearer ' + _token );},
    complete: play(device_id) //switch to complete to shuffle from V beginning
