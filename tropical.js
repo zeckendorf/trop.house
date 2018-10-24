@@ -69,7 +69,7 @@ function shuffle(device_id) {
     url: "https://api.spotify.com/v1/me/player/shuffle?state=true",
     type: "PUT",
    beforeSend: function(xhr){xhr.setRequestHeader('Authorization', 'Bearer ' + _token );},
-   success: play(device_id) //switch to complete to shuffle from V beginning
+   complete: play(device_id) //switch to complete to shuffle from V beginning
   });
 }
 
