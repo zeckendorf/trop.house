@@ -316,7 +316,7 @@ var COLORS = {
   FOG:  '#F106B2',
   LIGHT:  { road: '#6B6B6B', grass: '#B67C14', rumble: '#555555', lane: '#CCCCCC'  },
   DARK:   { road: '#696969', grass: '#945B92', rumble: '#BBBBBB'                   },
-  START:  { road: 'white',   grass: 'white',   rumble: 'white'                     },
+  START:  { road: 'black',   grass: 'black',   rumble: 'black'                     },
   FINISH: { road: 'black',   grass: 'black',   rumble: 'black'                     }
 };
 
