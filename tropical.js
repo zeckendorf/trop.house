@@ -18,7 +18,7 @@ const authEndpoint = 'https://accounts.spotify.com/authorize';
 
 // Replace with your app's client ID, redirect URI and desired scopes
 const clientId = '858e4ac240f0435b8859c168cb2e2711';
-const redirectUri = 'http://localhost:8000/tropical.html'
+const redirectUri = 'http://trop.house'
 const scopes = [
   'streaming',
   'user-read-birthdate',
