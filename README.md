@@ -1,4 +1,4 @@
-##🌴🌴 Tropical Vibes On Demand 🌴🌴
+## 🌴🌴 Tropical Vibes On Demand 🌴🌴
 
 Take a trip to some troppy vibes through some crappy, low-res textures using borrowed math and hastily thrown-together API calls. 
 
