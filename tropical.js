@@ -34,7 +34,7 @@ if (!_token) {
 // Set up the Web Playback SDK
 window.onSpotifyPlayerAPIReady = () => {
   const player = new Spotify.Player({
-    name: 'Web Playback SDK Template',
+    name: 'trop.house',
     getOAuthToken: cb => { cb(_token); }
   });
 
