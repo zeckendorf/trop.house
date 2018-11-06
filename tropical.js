@@ -48,8 +48,10 @@ window.onSpotifyPlayerAPIReady = () => {
   player.on('player_state_changed', state => {
     console.log('Player State Changed:');
     console.log(state);
-    $('#current-track').attr('src', state.track_window.current_track.album.images[0].url);
-    $('#current-track-name').text(state.track_window.current_track.name);
+    if(state){
+        $('#current-track').attr('src', state.track_window.current_track.album.images[0].url);
+        $('#current-track-name').text(state.track_window.current_track.name);
+    }
   });
 
   // Ready
@@ -89,7 +91,7 @@ function play(device_id) {
    success: function(data) {
      console.log('play result');
      console.log(data);
-     //shuffle(device_id);
+     shuffle(device_id);
    }
   });
 }
