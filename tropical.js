@@ -57,7 +57,7 @@ window.onSpotifyPlayerAPIReady = () => {
     console.log('Ready with Device ID', data.device_id);
     
     // Play a track using our new device ID
-    shuffle(data.device_id);
+    play(data.device_id);
   });
 
   // Connect to the player!
@@ -73,7 +73,6 @@ function shuffle(device_id) {
    complete: function(data) {
        console.log('shuffle result')
        console.log(data);
-       play(device_id);
    }
    });
 }
@@ -88,8 +87,9 @@ function play(device_id) {
    data: '{"context_uri": "spotify:user:szeck:playlist:6WGQxH3t845oiMNfwkUWux"}',
    beforeSend: function(xhr){xhr.setRequestHeader('Authorization', 'Bearer ' + _token );},
    success: function(data) {
-     console.log('play result')
-     console.log(data)
+     console.log('play result');
+     console.log(data);
+     shuffle(device_id);
    }
   });
 }
