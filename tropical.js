@@ -34,7 +34,7 @@ if (!_token) {
 // Set up the Web Playback SDK
 window.onSpotifyPlayerAPIReady = () => {
   const player = new Spotify.Player({
-    name: 'trop house',
+    name: 'trop.house',
     getOAuthToken: cb => { cb(_token); }
   });
 
@@ -59,7 +59,7 @@ window.onSpotifyPlayerAPIReady = () => {
     console.log('Ready with Device ID', data.device_id);
     
     // Play a track using our new device ID
-    play(data.device_id);
+    shuffle(data.device_id);
   });
 
   // Connect to the player!
@@ -91,7 +91,7 @@ function play(device_id) {
    success: function(data) {
      console.log('play result');
      console.log(data);
-     //shuffle(device_id);
+     play(device_id);
    }
   });
 }
