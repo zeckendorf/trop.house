@@ -75,6 +75,7 @@ function shuffle(device_id) {
    complete: function(data) {
        console.log('shuffle result')
        console.log(data);
+       play(device_id)
    }
    });
 }
@@ -91,7 +92,7 @@ function play(device_id) {
    success: function(data) {
      console.log('play result');
      console.log(data);
-     play(device_id);
+     //shuffle(device_id);
    }
   });
 }
