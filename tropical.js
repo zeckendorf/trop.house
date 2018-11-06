@@ -89,7 +89,7 @@ function play(device_id) {
    success: function(data) {
      console.log('play result');
      console.log(data);
-     //shuffle(device_id);
+     shuffle(device_id);
    }
   });
 }
