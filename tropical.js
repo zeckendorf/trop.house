@@ -46,7 +46,8 @@ window.onSpotifyPlayerAPIReady = () => {
 
   // Playback status updates
   player.on('player_state_changed', state => {
-    console.log(state)
+    console.log('Player State Changed:');
+    console.log(state);
     $('#current-track').attr('src', state.track_window.current_track.album.images[0].url);
     $('#current-track-name').text(state.track_window.current_track.name);
   });
